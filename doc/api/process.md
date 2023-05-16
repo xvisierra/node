@@ -3828,11 +3828,19 @@ Node.js and its dependencies. `process.versions.modules` indicates the current
 ABI version, which is increased whenever a C++ API changes. Node.js will refuse
 to load modules that were compiled against a different module ABI version.
 
+# base64
+
+•	{Object} `base64` is a group of binary-to-text encoding schemes that represent binary data in sequences of 24 bits that can be represented by four 6-bit Base64 digits.
+
+
 ```mjs
 import { versions } from 'node:process';
 
 console.log(versions);
 ```
+# cjs_module_lexer
+
+•	{Object} `cjs_module_lexer` is a very fast JS CommonJS module syntax lexer used to detect the most likely list of named exports of a CommonJS module.
 
 ```cjs
 const { versions } = require('node:process');
